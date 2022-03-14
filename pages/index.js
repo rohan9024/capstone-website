@@ -1,50 +1,26 @@
-// import Head from 'next/head'
-// import Image from 'next/image'
-// import Sidebar from '../components/Sidebar'
+
 import HomePage from '../components/HomePage'
-// import styles from '../styles/Home.module.css'
-// import { useSession, signIn, signOut } from "next-auth/react"
-// import Loggedin from './loggedin'
-// import Link from 'next/link'
-// import Login from './2'
 
-// export default function Home() {
-//   const { data: session } = useSession()
-//   if (session) {
-//     return (
-//       <>
-//         <h1>Signed in as {session.user.email}</h1>
-//         <button onClick={() => signOut()}>Sign out</button>
-//       </>
-//     )
+// export const getStaticProps = async () => {
+
+//   // const res = await fetch('https://jsonplaceholder.typicode.com/users');
+//   // const res = await fetch('https://graph.facebook.com/v3.2/17841452131317817?fields=business_discovery.username(_aaila_aalia_){followers_count,media_count,media{comments_count,like_count}}&access_token=EAANFg0BMulMBAEeqcna5XbPvHdsDcs5tWuMTmekLqAFLyNeHJZBgzxJkoVfDCZBE1RZCu3tZCYpcbTZCsDZAKyPmW8L1ZCm8xjHYU3R8EqGcZCK4VfIjILewUjHBP27FUwt0gyPZBtl5uJXlMRZBzCnBWlOTNvma5ZCGw7djMeDp4TvAZCRho1HudASZCBK8heicDbWagiQi6jVHV7qPgYdUEwWDy6Rg1eOwOsSYZD');
+
+//   const data = await res.json()
+
+//   console.log(data)
+
+//   return {
+//     props: { ninjas: data }
 //   }
-//   return (
-//     <>
-//       {/* <HomePage /> */}
-
-//       <h1>Not signed in</h1>
-
-//       <button onClick={() => signIn()}>Sign in</button>
-//     </>
-//   )
 // }
-import { useSession, signIn, signOut } from "next-auth/react"
 
-export default function Component() {
-  const { data: session } = useSession()
-  if (session) {
-    return (
-      <>
-        Signed in as {session.user.email} <br />
-        <button onClick={() => signOut()}>Sign out</button>
-      </>
-    )
-  }
+
+export default function Component({ ninjas }) {
+
   return (
     <>
       <HomePage />
-      Not signed in <br />
-      <button onClick={() => signIn()}>Sign in</button>
     </>
   )
 }
