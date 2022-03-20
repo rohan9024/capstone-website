@@ -5,6 +5,6 @@ const nextConfig = {
 
 module.exports = {
   images: {
-    domains: ['imageio.forbes.com','cdn.vox-cdn.com','upload.wikimedia.org','image.cnbcfm.com','cdn.britannica.com'],
+    domains: ['scontent-bom1-2.cdninstagram.com','scontent-bom1-1.cdninstagram.com','imageio.forbes.com','cdn.vox-cdn.com','upload.wikimedia.org','image.cnbcfm.com','cdn.britannica.com','scontent-bom1-2.xx.fbcdn.net'],
   },
 }

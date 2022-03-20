@@ -6,8 +6,7 @@ import Main from './Main'
 
 function HomePage() {
     return (
-        <div className='flex-1 bg-[#04080f]  p-6'>
-           
+        <div className='flex-1 bg-gray-200 p-6'>
             <Header />
             <Main />
         </div>

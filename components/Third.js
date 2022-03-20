@@ -10,21 +10,14 @@ import comments from "../assets/comments.png"
 import { EngagementContext } from "../pages/Contexts/EngagementContext";
 
 function Third() {
-  const { show, setShow, posts } = useContext(EngagementContext)
-  // id: 2,
-  // name: 'Elon Musk',
-  // imgUrl: 'https://image.cnbcfm.com/api/v1/image/106434195-1595357993564-elon.jpg?v=1625260371',
-  // likes: '2M',
-  // comments: '22k',
-  // caption: 'This is caption2',
-  // location: 'China',
-  // shares: '300k',
+  const { show, setShow, data, media, followers, mediaCount } = useContext(EngagementContext)
+ 
   return (
     <div className='h-[720px] w-[400px] bg-black mt-10 mb-10 mr-10 rounded-3xl'>
       {show.showPost ? (
         <div className='text-white'>
           <div className='ml-16 mt-10'>
-            <h1 className='text-2xl  text-gray-200'>Insights</h1>
+            <h1 className='text-2xl text-gray-200'>Insights</h1>
           </div>
           <div className='flex-col ml-16 mt-8 space-y-8 text-gray-200'>
             <div className='flex '>
